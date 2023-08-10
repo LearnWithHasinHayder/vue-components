@@ -1,161 +1,167 @@
 <script setup>
+const peoples = [
+  {
+    name:'Margot Foster',
+    position:'Backend Developer',
+    email:'margotfoster@example.com',
+    salary:'$120,000',
+    about:'Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.',
+    attachments:[
+      {
+        name:'resume_front_end_developer.pdf',
+        size:'256kb',
+        type:'PDF',
+        url:'#'
+      },
+      {
+        name:'coverletter_front_end_developer.pdf',
+        size:'128kb',
+        type:'PDF',
+        url:'#'
+      }
+    ]
+  },
+  {
+    name:'John Doe',
+    position:'Frontend Developer',
+    email:'john@doe.com',
+    salary:'$100,000',
+    about:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    attachments:[
+      {
+        name:'resume_front_end_developer.pdf',
+        size:'1MB',
+        type:'PDF',
+        url:'#'
+      },
+      {
+        name:'coverletter_front_end_developer.pdf',
+        size:'512kb',
+        type:'PDF',
+        url:'#'
+      }
+    ]
+  },
+  {
+    name:'Jane Doe',
+    position:'Designer',
+    email:'jane@doe.com',
+    salary:'$110,000',
+    about:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Here is some more text.',
+    attachments:[
+      {
+        name:'resume_designer.pdf',
+        size:'5MB',
+        type:'PDF',
+        url:'#'
+      },
+      {
+        name:'coverletter_designer.pdf',
+        size:'2MB',
+        type:'PDF',
+        url:'#'
+      }
+    ]
+  }
+]
 </script>
 
 <template>
   <section class="mx-auto ">
     <h1 class="my-10 text-center">Components</h1>
-    <div class="flex items-center justify-center h-[600px] font-medium">
-      <div class="flex flex-grow items-center justify-center h-full text-gray-600 bg-gray-100">
-        <!-- Component Start -->
-        <div class="max-w-full p-8 bg-white rounded-lg shadow-lg w-96">
-          <div class="flex items-center mb-6">
-            <svg class="h-8 w-8 text-indigo-500 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
-            </svg>
-            <h4 class="font-semibold ml-3 text-lg">Frodo's Jobs</h4>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_1" checked="">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-100" for="task_1">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Weed front garden.</span>
-            </label>
-          </div>
-          <div>
-            <input disabled class="hidden" type="checkbox" id="task_2" checked="">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-100" for="task_2">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Chill and smoke some Old Toby.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_3">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-100" for="task_3">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Keep ring secret and safe.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_4">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-100" for="task_4">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Meet Gandalf at Bree.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_5">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-100" for="task_5">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Destroy ring and defeat dark lord.</span>
-            </label>
-          </div>
-          
+    <div class="flex justify-between space-x-5">
+      <div class="w-1/3">
+        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
+          Margot Foster
         </div>
-        <!-- Component End  -->
+        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
+          Margot Foster
+        </div>
+        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
+          Margot Foster
+        </div>
       </div>
-      <div class="flex flex-grow items-center justify-center bg-gray-900 h-full">
-        <!-- Component Start -->
-        <div class="max-w-full p-8 bg-gray-800 rounded-lg shadow-lg w-96 text-gray-200">
-          <div class="flex items-center mb-6">
-            <svg class="h-8 w-8 text-indigo-500 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
-            </svg>
-            <h4 class="font-semibold ml-3 text-lg">Sam's Jobs</h4>
+      <div class="w-2/3">
+        <div>
+          <div class="px-4 sm:px-0">
+            <h3 class="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
+            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
           </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_6" checked="">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-900" for="task_6">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-500 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Trim the verge.</span>
-            </label>
+          <div class="mt-6 border-t border-gray-100">
+            <dl class="divide-y divide-gray-100">
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Full name</dt>
+                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Margot Foster</dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Application for</dt>
+                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Backend Developer</dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Email address</dt>
+                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">margotfoster@example.com</dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Salary expectation</dt>
+                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">$120,000</dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">About</dt>
+                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Attachments</dt>
+                <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                  <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
+                    <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div class="flex w-0 flex-1 items-center">
+                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+                        </svg>
+                        <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span class="truncate font-medium">resume_back_end_developer.pdf</span>
+                          <span class="flex-shrink-0 text-gray-400">2.4mb</span>
+                        </div>
+                      </div>
+                      <div class="ml-4 flex-shrink-0">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+                      </div>
+                    </li>
+                    <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+                      <div class="flex w-0 flex-1 items-center">
+                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+                        </svg>
+                        <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                          <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+                          <span class="flex-shrink-0 text-gray-400">4.5mb</span>
+                        </div>
+                      </div>
+                      <div class="ml-4 flex-shrink-0">
+                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+                      </div>
+                    </li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
           </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_7" checked="">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-900" for="task_7">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-500 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Eavesdrop on Master Frodo &amp; Gandalf.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_8">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-900" for="task_8">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-500 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Boil, mash, and stick potatoes in stew.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_9">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-900" for="task_9">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-500 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Carry Frodo.</span>
-            </label>
-          </div>
-          <div>
-            <input class="hidden" type="checkbox" id="task_10">
-            <label class="flex items-center h-10 px-2 rounded cursor-pointer hover:bg-gray-900" for="task_10">
-              <span class="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-500 rounded-full">
-                <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-              </span>
-              <span class="ml-4 text-sm">Be all round legend.</span>
-            </label>
-          </div>
-          
         </div>
-        <!-- Component End  -->
 
       </div>
     </div>
-
   </section>
 </template>
 
 <style scoped>
 input[type=checkbox]:checked+label span:first-of-type {
-	background-color: #10B981;
-	border-color: #10B981;
-	color: #fff;
+  background-color: #10B981;
+  border-color: #10B981;
+  color: #fff;
 }
 
 input[type=checkbox]:checked+label span:nth-of-type(2) {
-	text-decoration: line-through;
-	color: #9CA3AF;
+  text-decoration: line-through;
+  color: #9CA3AF;
 }
 </style>
