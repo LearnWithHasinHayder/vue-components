@@ -1,155 +1,157 @@
 <script setup>
-const peoples = [
-  {
-    name:'Margot Foster',
-    position:'Backend Developer',
-    email:'margotfoster@example.com',
-    salary:'$120,000',
-    about:'Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.',
-    attachments:[
-      {
-        name:'resume_front_end_developer.pdf',
-        size:'256kb',
-        type:'PDF',
-        url:'#'
-      },
-      {
-        name:'coverletter_front_end_developer.pdf',
-        size:'128kb',
-        type:'PDF',
-        url:'#'
-      }
-    ]
-  },
-  {
-    name:'John Doe',
-    position:'Frontend Developer',
-    email:'john@doe.com',
-    salary:'$100,000',
-    about:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    attachments:[
-      {
-        name:'resume_front_end_developer.pdf',
-        size:'1MB',
-        type:'PDF',
-        url:'#'
-      },
-      {
-        name:'coverletter_front_end_developer.pdf',
-        size:'512kb',
-        type:'PDF',
-        url:'#'
-      }
-    ]
-  },
-  {
-    name:'Jane Doe',
-    position:'Designer',
-    email:'jane@doe.com',
-    salary:'$110,000',
-    about:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Here is some more text.',
-    attachments:[
-      {
-        name:'resume_designer.pdf',
-        size:'5MB',
-        type:'PDF',
-        url:'#'
-      },
-      {
-        name:'coverletter_designer.pdf',
-        size:'2MB',
-        type:'PDF',
-        url:'#'
-      }
-    ]
-  }
-]
+
 </script>
 
 <template>
   <section class="mx-auto ">
-    <h1 class="my-10 text-center">Components</h1>
-    <div class="flex justify-between space-x-5">
-      <div class="w-1/3">
-        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
-          Margot Foster
-        </div>
-        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
-          Margot Foster
-        </div>
-        <div class="my-2 p-5 hover:bg-gray-200 cursor-pointer">
-          Margot Foster
-        </div>
-      </div>
-      <div class="w-2/3">
+    <header>
+      <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
         <div>
-          <div class="px-4 sm:px-0">
-            <h3 class="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
-            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+          <h1>
+            <a href="/11r/">11r</a>
+          </h1>
+          <p>america's favorite eleventy blog template</p>
+        </div>
+
+        <ul class="flex flex-wrap sm:w-32 w-full mt-6 md:justify-between justify-evenly">
+          <li>
+            <a href="/11r/404.html">404</a>
+          </li>
+
+          <li>
+            <a href="/11r/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container mx-auto max-w-3xl p-8 grow">
+
+      <div>
+
+
+        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+          <h2>
+            <a class="block" href="/11r/post/deadbeef-decrementation/">Deadbeef Decrementation</a>
+          </h2>
+
+          <p class="excerpt">How to decrement from a magic debug value to zero.</p>
+
+          <a class="tag spirituality" href="/11r/tag/spirituality">spirituality</a>
+
+          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sat Oct 08 2016 19:00:00 GMT-0500 (Central Daylight Time)">
+            October 9, 2016
+          </span>
+        </div>
+
+
+
+        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+          <h2>
+            <a class="block" href="/11r/interior-crocodile-alligator/">Interior Crocodile Alligator, I Drive a Chevrolet Movie Theater</a>
+          </h2>
+
+          <p class="excerpt">♫ Interior Crocodile Alligator, I Drive a Chevrolet Movie Theater ♫</p>
+
+          <a class="tag cats" href="/11r/tag/cats">cats</a>
+
+          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Thu Sep 18 2008 19:00:00 GMT-0500 (Central Daylight Time)">
+            September 19, 2008
+          </span>
+        </div>
+
+
+
+        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+          <h2>
+            <a class="block" href="/11r/post/why-my-practice-of-thelema-makes-me-better-at-world-of-warcraft/">Why My Practice of Thelema Makes Me Better at World of Warcraft</a>
+          </h2>
+
+          <p class="excerpt">"Do what thou wilt" shall be the whole of the Law.</p>
+
+          <a class="tag enchiladas" href="/11r/tag/enchiladas">enchiladas</a>
+
+          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sun Sep 08 1974 19:00:00 GMT-0500 (Central Daylight Time)">
+            September 9, 1974
+          </span>
+        </div>
+
+
+
+
+
+        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+          <h2>
+            <a class="block" href="/11r/post/shrek-predicted-the-covid-19-pandemic/">Shrek Predicted the COVID-19 Pandemic</a>
+          </h2>
+
+          <p class="excerpt">Find out how Shrek is disrupting astrology.</p>
+
+          <a class="tag orcas" href="/11r/tag/orcas">orcas</a><a class="tag beer" href="/11r/tag/beer">beer</a>
+
+          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Fri Apr 15 1921 19:00:00 GMT-0500 (Central Daylight Time)">
+            April 16, 1921
+          </span>
+        </div>
+
+
+
+        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+          <h2>
+            <a class="block" href="/11r/post/lorem-ipsum/">Lorem Ipsum</a>
+          </h2>
+
+          <p class="excerpt">You know what time it is: lorem ipsum time.</p>
+
+          <a class="tag stoicism" href="/11r/tag/stoicism">stoicism</a>
+
+          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sun Nov 03 1918 18:00:00 GMT-0600 (Central Standard Time)">
+            November 4, 1918
+          </span>
+        </div>
+
+
+      </div>
+
+      <div>
+        <div class="md:flex justify-evenly mb-6">
+          <div class="flex justify-between mx-auto w-full">
+
+
+
+            <div class="mx-auto mb-4">
+              <a class="next-page md:mb-2" href="/11r/page/2/">Previous Page</a>
+            </div>
+
           </div>
-          <div class="mt-6 border-t border-gray-100">
-            <dl class="divide-y divide-gray-100">
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">Full name</dt>
-                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-              </div>
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">Application for</dt>
-                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Backend Developer</dd>
-              </div>
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">Email address</dt>
-                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">margotfoster@example.com</dd>
-              </div>
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">Salary expectation</dt>
-                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">$120,000</dd>
-              </div>
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">About</dt>
-                <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
-              </div>
-              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">Attachments</dt>
-                <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                  <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
-                    <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
-                      <div class="flex w-0 flex-1 items-center">
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
-                        </svg>
-                        <div class="ml-4 flex min-w-0 flex-1 gap-2">
-                          <span class="truncate font-medium">resume_back_end_developer.pdf</span>
-                          <span class="flex-shrink-0 text-gray-400">2.4mb</span>
-                        </div>
-                      </div>
-                      <div class="ml-4 flex-shrink-0">
-                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
-                      </div>
-                    </li>
-                    <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
-                      <div class="flex w-0 flex-1 items-center">
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
-                        </svg>
-                        <div class="ml-4 flex min-w-0 flex-1 gap-2">
-                          <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
-                          <span class="flex-shrink-0 text-gray-400">4.5mb</span>
-                        </div>
-                      </div>
-                      <div class="ml-4 flex-shrink-0">
-                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
-                      </div>
-                    </li>
-                  </ul>
-                </dd>
-              </div>
-            </dl>
+
+          <div class="flex justify-between mx-auto w-full">
+
+
+
+            <div class="mx-auto">
+              <a class="last-page" href="/11r/page/2/">Last Page</a>
+            </div>
+
           </div>
         </div>
 
+        <p class="text-center text-sm italic mb-10">(On page
+          1
+          of
+          2.)</p>
       </div>
-    </div>
+
+      <div class="grid grid-flow-row grid-cols-3 gap-4 mb-2">
+        <a class="tag cats mx-auto" href="/11r/tag/cats">cats</a>
+        <a class="tag enchiladas mx-auto" href="/11r/tag/enchiladas">enchiladas</a>
+        <a class="tag beer mx-auto" href="/11r/tag/beer">beer</a>
+        <a class="tag spirituality mx-auto" href="/11r/tag/spirituality">spirituality</a>
+        <a class="tag orcas mx-auto" href="/11r/tag/orcas">orcas</a>
+        <a class="tag stoicism mx-auto" href="/11r/tag/stoicism">stoicism</a>
+      </div>
+
+
+    </main>
   </section>
 </template>
 
