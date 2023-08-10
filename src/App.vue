@@ -4,166 +4,133 @@
 
 <template>
   <section class="mx-auto ">
-    <header>
-      <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
-        <div>
-          <h1>
-            <a href="/11r/">11r</a>
-          </h1>
-          <p>america's favorite eleventy blog template</p>
-        </div>
-
-        <ul class="flex flex-wrap sm:w-32 w-full mt-6 md:justify-between justify-evenly">
-          <li>
-            <a href="/11r/404.html">404</a>
-          </li>
-
-          <li>
-            <a href="/11r/about">About</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container mx-auto max-w-3xl p-8 grow">
-
-      <div>
-
-
-        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
-          <h2>
-            <a class="block" href="/11r/post/deadbeef-decrementation/">Deadbeef Decrementation</a>
-          </h2>
-
-          <p class="excerpt">How to decrement from a magic debug value to zero.</p>
-
-          <a class="tag spirituality" href="/11r/tag/spirituality">spirituality</a>
-
-          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sat Oct 08 2016 19:00:00 GMT-0500 (Central Daylight Time)">
-            October 9, 2016
-          </span>
-        </div>
-
-
-
-        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
-          <h2>
-            <a class="block" href="/11r/interior-crocodile-alligator/">Interior Crocodile Alligator, I Drive a Chevrolet Movie Theater</a>
-          </h2>
-
-          <p class="excerpt">♫ Interior Crocodile Alligator, I Drive a Chevrolet Movie Theater ♫</p>
-
-          <a class="tag cats" href="/11r/tag/cats">cats</a>
-
-          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Thu Sep 18 2008 19:00:00 GMT-0500 (Central Daylight Time)">
-            September 19, 2008
-          </span>
-        </div>
-
-
-
-        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
-          <h2>
-            <a class="block" href="/11r/post/why-my-practice-of-thelema-makes-me-better-at-world-of-warcraft/">Why My Practice of Thelema Makes Me Better at World of Warcraft</a>
-          </h2>
-
-          <p class="excerpt">"Do what thou wilt" shall be the whole of the Law.</p>
-
-          <a class="tag enchiladas" href="/11r/tag/enchiladas">enchiladas</a>
-
-          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sun Sep 08 1974 19:00:00 GMT-0500 (Central Daylight Time)">
-            September 9, 1974
-          </span>
-        </div>
-
-
-
-
-
-        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
-          <h2>
-            <a class="block" href="/11r/post/shrek-predicted-the-covid-19-pandemic/">Shrek Predicted the COVID-19 Pandemic</a>
-          </h2>
-
-          <p class="excerpt">Find out how Shrek is disrupting astrology.</p>
-
-          <a class="tag orcas" href="/11r/tag/orcas">orcas</a><a class="tag beer" href="/11r/tag/beer">beer</a>
-
-          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Fri Apr 15 1921 19:00:00 GMT-0500 (Central Daylight Time)">
-            April 16, 1921
-          </span>
-        </div>
-
-
-
-        <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
-          <h2>
-            <a class="block" href="/11r/post/lorem-ipsum/">Lorem Ipsum</a>
-          </h2>
-
-          <p class="excerpt">You know what time it is: lorem ipsum time.</p>
-
-          <a class="tag stoicism" href="/11r/tag/stoicism">stoicism</a>
-
-          <span class="block md:inline md:float-right md:pt-4 pt-2 created-date" datetime="Sun Nov 03 1918 18:00:00 GMT-0600 (Central Standard Time)">
-            November 4, 1918
-          </span>
-        </div>
-
-
+    <section class="bg-white dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
+          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
       </div>
-
-      <div>
-        <div class="md:flex justify-evenly mb-6">
-          <div class="flex justify-between mx-auto w-full">
-
-
-
-            <div class="mx-auto mb-4">
-              <a class="next-page md:mb-2" href="/11r/page/2/">Previous Page</a>
-            </div>
-
+      <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+          <!-- Pricing Card -->
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+              <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
+              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+              <div class="flex justify-center items-baseline my-8">
+                  <span class="mr-2 text-5xl font-extrabold">$29</span>
+                  <span class="text-gray-500 dark:text-gray-400">/month</span>
+              </div>
+              <!-- List -->
+              <ul role="list" class="mb-8 space-y-4 text-left">
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Individual configuration</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>No setup, or hidden fees</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Team size: <span class="font-semibold">1 developer</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Premium support: <span class="font-semibold">6 months</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Free updates: <span class="font-semibold">6 months</span></span>
+                  </li>
+              </ul>
+              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
           </div>
-
-          <div class="flex justify-between mx-auto w-full">
-
-
-
-            <div class="mx-auto">
-              <a class="last-page" href="/11r/page/2/">Last Page</a>
-            </div>
-
+          <!-- Pricing Card -->
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+              <h3 class="mb-4 text-2xl font-semibold">Company</h3>
+              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+              <div class="flex justify-center items-baseline my-8">
+                  <span class="mr-2 text-5xl font-extrabold">$99</span>
+                  <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
+              </div>
+              <!-- List -->
+              <ul role="list" class="mb-8 space-y-4 text-left">
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Individual configuration</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>No setup, or hidden fees</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Team size: <span class="font-semibold">10 developers</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Premium support: <span class="font-semibold">24 months</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Free updates: <span class="font-semibold">24 months</span></span>
+                  </li>
+              </ul>
+              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
           </div>
-        </div>
-
-        <p class="text-center text-sm italic mb-10">(On page
-          1
-          of
-          2.)</p>
+          <!-- Pricing Card -->
+          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+              <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
+              <div class="flex justify-center items-baseline my-8">
+                  <span class="mr-2 text-5xl font-extrabold">$499</span>
+                  <span class="text-gray-500 dark:text-gray-400">/month</span>
+              </div>
+              <!-- List -->
+              <ul role="list" class="mb-8 space-y-4 text-left">
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Individual configuration</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>No setup, or hidden fees</span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Premium support: <span class="font-semibold">36 months</span></span>
+                  </li>
+                  <li class="flex items-center space-x-3">
+                      <!-- Icon -->
+                      <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                      <span>Free updates: <span class="font-semibold">36 months</span></span>
+                  </li>
+              </ul>
+              <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+          </div>
       </div>
-
-      <div class="grid grid-flow-row grid-cols-3 gap-4 mb-2">
-        <a class="tag cats mx-auto" href="/11r/tag/cats">cats</a>
-        <a class="tag enchiladas mx-auto" href="/11r/tag/enchiladas">enchiladas</a>
-        <a class="tag beer mx-auto" href="/11r/tag/beer">beer</a>
-        <a class="tag spirituality mx-auto" href="/11r/tag/spirituality">spirituality</a>
-        <a class="tag orcas mx-auto" href="/11r/tag/orcas">orcas</a>
-        <a class="tag stoicism mx-auto" href="/11r/tag/stoicism">stoicism</a>
-      </div>
-
-
-    </main>
+  </div>
+</section>
   </section>
 </template>
 
 <style scoped>
-input[type=checkbox]:checked+label span:first-of-type {
-  background-color: #10B981;
-  border-color: #10B981;
-  color: #fff;
-}
 
-input[type=checkbox]:checked+label span:nth-of-type(2) {
-  text-decoration: line-through;
-  color: #9CA3AF;
-}
 </style>
