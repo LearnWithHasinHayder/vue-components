@@ -1,4 +1,8 @@
 <script setup>
+import {beforeMount} from 'vue'
+beforeMount(()=>{
+  //api call
+})
 const posts=[
   {
     title: "Deadbeef Decrementation",
